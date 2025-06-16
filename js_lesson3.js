@@ -1,3 +1,4 @@
+//Note to self:
 // The loop starts with i = 0.
 // It checks if i is less than y (the number you give as the second argument).
 // If yes, it multiplies z by x and stores the result back in z.
