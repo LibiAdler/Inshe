@@ -1,6 +1,6 @@
 //Note to self:
 // The loop starts with i = 0.
-// It checks if i is less than y (the number you give as the second argument).
+// It checks if i is less than y (the number I give as the second argument).
 // If yes, it multiplies z by x and stores the result back in z.
 // It increases i by 1.
 // Steps 2–4 repeat until i is no longer less than y.
