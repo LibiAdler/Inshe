@@ -31,7 +31,7 @@ const services = {
     countAll: function () {
         let total = 0;
         for (let key in this) {
-            if (!isNaN(parseFloat(this[key]))) { // Only add if it's a valid number
+            if (!isNaN(parseFloat(this[key]))) { // Only add if it's an actual number
             total = total + parseFloat(this[key]);
         }
         }
@@ -41,8 +41,8 @@ const services = {
 
 services["spa"] = "30$"; // Adding a new service
 services["massage"] = "50$"; // Adding another new service
-services["brush"] = "12$"; // Adding another new service
-services["scream of frustration"] = "0$"; // Adding another new service
+services["brush"] = "12$"; // Aaaaand another one
+services["scream of frustration"] = "0$"; // Existential crisis check lol
 
 services.getMinPrice(); // Call the method to find the cheapest service
 services.getMaxPrice(); // Call the method to find the most expensive service
