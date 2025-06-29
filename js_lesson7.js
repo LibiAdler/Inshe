@@ -7,8 +7,8 @@ const services = {
     getMinPrice: function () {
     let minService = "";
     let minPrice = 9999999; // Start with a big number (any possible way to make it more dynamic?)
-    for (let key in services) {
-            let price = parseFloat(services[key]);
+    for (let key in this) {
+            let price = parseFloat(this[key]);
             if (price < minPrice) {
                 minPrice = price;
                 minService = key;
@@ -19,8 +19,8 @@ const services = {
     getMaxPrice: function () {
         let maxService = "";
         let maxPrice = 0;
-        for (let key in services) {
-                let price = parseFloat(services[key]);
+        for (let key in this) {
+                let price = parseFloat(this[key]);
                 if (price > maxPrice) {
                     maxPrice = price;
                     maxService = key;
@@ -30,9 +30,9 @@ const services = {
     },
     countAll: function () {
         let total = 0;
-        for (let key in services) {
-            if (!isNaN(parseFloat(services[key]))) { // Only add if it's a valid number
-            total = total + parseFloat(services[key]);
+        for (let key in this) {
+            if (!isNaN(parseFloat(this[key]))) { // Only add if it's a valid number
+            total = total + parseFloat(this[key]);
         }
         }
         console.log("Total cost of all services: " + total + "$");
